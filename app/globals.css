@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* colors */
+  --white: #ffffff;
+  --black: #000000;
+  --danger: #cd2c2c;
+
+  /* action-colors */
+  --primary: #d87d4a;
+  --muted-primary: #fbaf85;
+  --muted-high-white: #fafafa;
+  --muted-low-white: #7d7d7d;
+  --muted-black: #101010;
+
+  /* fonts */
+  --font: "Manrope", sans-serif;
+
+  /* line-heights */
+  --line-height1: 1.56;
+  --line-height2: 2.25;
+
+  /* letter-spacing */
+  --letter-spacing1: 0.13em;
+  --letter-spacing2: 0.06em;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font);
+}
+
+h1 {
+  @apply font-bold text-[3.5rem] leading-[1.03] tracking-[var(--letter-spacing1)];
+}
+
+h2 {
+  @apply font-bold text-[2.5rem] leading-[1.1] tracking-[var(--letter-spacing2)];
+}
+
+h3 {
+  @apply font-bold text-[2rem] leading-[1.2] tracking-[var(--letter-spacing2)];
+}
+
+h4 {
+  @apply font-bold text-[1.75rem] leading-[1.2] tracking-[var(--letter-spacing2)];
+}
+
+h5 {
+  @apply font-bold text-[1.5rem] leading-[1.2] tracking-[var(--letter-spacing1)];
+}
+
+h6 {
+  @apply font-bold text-[1.13rem] leading-[1.3] tracking-[var(--letter-spacing2)];
+}
+
+.overline {
+  @apply font-normal text-[0.88rem] tracking-[0.63em] text-[var(--primary)];
+}
+
+.subtitle {
+  @apply font-bold text-[0.81rem] leading-[var(--line-height1)] tracking-[var(--letter-spacing2)];
+}
+
+p {
+  @apply text-[0.94rem] leading-[var(--line-height1)] tracking-[var(--letter-spacing1)];
+}
+
+/* Button Variants */
+.primary-btn {
+  @apply px-[1.91em] py-[0.94em] text-[0.81rem] uppercase font-bold bg-[var(--primary)] text-white hover:bg-[var(--muted-primary)] transition-colors;
+}
+
+.black-btn {
+  @apply px-[1.91em] py-[0.94em] text-[0.81rem] uppercase font-bold bg-white text-black hover:bg-black hover:text-white border-[0.13rem] border-black transition-colors;
+}
+
+.shop-btn {
+  @apply text-[0.81rem] uppercase font-bold bg-[var(--primary)] text-white hover:bg-[var(--muted-primary)] transition-colors;
+}
+
+.error{
+  @apply font-medium text-[0.75rem] leading-[1.56] tracking-[-0.21px] text-[var(--danger)];
+}
+
+.label{
+  @apply text-black font-bold text-[0.75rem] leading-[1.56] tracking-[-0.21px];
+}
+
+/* Container & Layout Utilities */
+.page-padding {
+  @apply px-[1.5em] md:px-[2.44em] lg:px-[10.31em];
+}
+
+/* Footer Classes */
+.footer-container {
+  @apply px-[1.5em] md:px-[2.44em] lg:px-[10.31em] pt-[3.25em] md:pt-[3.75em] lg:pt-[4.69em] pb-[2.81em] bg-[var(--black)];
+}
+
+.footer-navlink {
+  @apply font-bold text-[0.81rem] leading-[var(--line-height1)] tracking-[var(--letter-spacing2)] text-[var(--white)] uppercase hover:text-[var(--primary)] transition-colors;
+}
+
+.footer-text {
+  @apply text-[var(--muted-low-white)] tracking-normal;
+}
