@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  @apply font-bold text-[2.5rem] leading-[1.1] tracking-[var(--letter-spacing2)];
+  @apply font-bold leading-[1.1] tracking-[var(--letter-spacing2)];
 }
 
 h3 {
@@ -106,3 +106,23 @@ p {
 .footer-text {
   @apply text-[var(--muted-low-white)] tracking-normal;
 }
+
+/* SubFooter Classes */
+.subfooter-container {
+  @apply px-[1.5em] md:px-[2.44em] lg:px-[10.31em] flex flex-col lg:flex-row-reverse justify-center items-center gap-[2.5rem] md:gap-[3.94rem] lg:gap-[7.81rem] my-[7.5rem] lg:my-[12.5rem];
+}
+
+.subfooter-image-wrapper {
+  @apply relative w-full max-w-[20.44rem] md:max-w-none md:w-full lg:max-w-[33.75rem] h-[18.75rem] lg:h-[36.75rem];
+}
+
+.subfooter-content {
+  @apply flex flex-col justify-center items-center lg:items-start text-center lg:text-left md:px-[3.63em] lg:px-0 max-w-[35.8rem] lg:max-w-[27.81rem];
+}
+
+.subfooter-title {
+  @apply uppercase mb-[2rem] text-[1.75rem] md:text-[2.5rem];
+}
+
+
+
