@@ -104,7 +104,7 @@ p {
 }
 
 .navbar-links {
-  @apply absolute top-0 left-0 mt-[8rem] w-full flex-col items-center justify-center gap-[5rem] md:mt-[12rem] lg:static lg:mt-0 lg:flex lg:w-auto lg:flex-row lg:gap-[2.13rem];
+  @apply absolute top-0 left-0 h-full w-full flex-col items-center justify-center gap-[5rem] lg:static lg:mt-0 lg:flex lg:w-auto lg:flex-row lg:gap-[2.13rem];
 }
 
 .navbar-link {
