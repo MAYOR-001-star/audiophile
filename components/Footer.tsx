@@ -19,7 +19,7 @@ const Footer = () => {
         <footer className='footer-container'>
             {/* Top Row: Logo & Navlinks */}
             <div className='flex flex-col lg:flex-row justify-between items-center md:items-start lg:items-center mb-[2.25rem]'>
-                <Image src="/Audiophile.svg" alt="logo" width={143} height={25} />
+                <Image src="/audiophile.svg" alt="logo" width={143} height={25} />
                 <ul className="flex flex-col md:flex-row items-center gap-[2.13rem] mt-[3rem] md:mt-[2rem] lg:mt-0">
                     {navlinks.map((link) => (
                         <li key={link.name}>

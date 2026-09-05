@@ -27,7 +27,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/Audiophile.svg"
+            src="/audiophile.svg"
             alt="Audiophile"
             width={143}
             height={25}
