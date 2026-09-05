@@ -31,10 +31,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <Navbar />
-      <body className="min-h-full flex flex-col">{children}</body>
-      <SubFooter />
-      <Footer />
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <SubFooter />
+        <Footer />
+      </body>
     </html>
   );
 }

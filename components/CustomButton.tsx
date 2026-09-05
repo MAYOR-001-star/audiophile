@@ -5,13 +5,13 @@ import Image from 'next/image'
 const CustomButton = ({ text, variant, buttonType }: ButtonProps) => {
     return (
         buttonType === "shop" ? (
-            <button className="shop-btn flex items-center gap-[0.83rem]">
-                {text}
-                <Image src="/chevron-right.svg" alt="arrow" width={5} height={10} />
+            <button className="shop-btn block w-full">
+                <span className='text-center text-[var(--muted-low-white)] hover:text-[var(--muted-primary)]'>{text}</span>
+                <Image src="/icons/chevron-right.svg" alt="arrow" width={5} height={10} />
             </button>
         ) : (
             <button className={variant}>
-                {text}
+                <span>{text}</span>
             </button>
         )
     )

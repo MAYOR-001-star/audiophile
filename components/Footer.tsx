@@ -1,19 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { navlinks, socials } from '@/mockupData/data';
 
-const navlinks = [
-    { name: "Home", href: "/" },
-    { name: "Headphones", href: "/headphones" },
-    { name: "Speakers", href: "/speakers" },
-    { name: "Earphones", href: "/earphones" }
-]
-
-const socials = [
-    { name: "facebook", src: "/socials/facebook.svg" },
-    { name: "instagram", src: "/socials/instagram.svg" },
-    { name: "twitter", src: "/socials/twitter.svg" }
-]
 
 const SocialIcons = ({ className = "" }: { className?: string }) => (
     <div className={`flex items-center gap-4 ${className}`}>
@@ -34,7 +23,7 @@ const Footer = () => {
                 <ul className="flex flex-col md:flex-row items-center gap-[2.13rem] mt-[3rem] md:mt-[2rem] lg:mt-0">
                     {navlinks.map((link) => (
                         <li key={link.name}>
-                            <Link href={link.href} className="footer-navlink">
+                            <Link href={link.href} className="footer-navlink text-[0.81rem]">
                                 {link.name}
                             </Link>
                         </li>

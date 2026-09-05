@@ -33,7 +33,7 @@ body {
 }
 
 h1 {
-  @apply font-bold text-[3.5rem] leading-[1.03] tracking-[var(--letter-spacing1)];
+  @apply font-bold leading-[1.03] tracking-[var(--letter-spacing1)];
 }
 
 h2 {
@@ -45,7 +45,7 @@ h3 {
 }
 
 h4 {
-  @apply font-bold text-[1.75rem] leading-[1.2] tracking-[var(--letter-spacing2)];
+  @apply font-bold leading-[1.2] tracking-[var(--letter-spacing2)];
 }
 
 h5 {
@@ -57,7 +57,7 @@ h6 {
 }
 
 .overline {
-  @apply font-normal text-[0.88rem] tracking-[0.63em] text-[var(--primary)];
+  @apply no-underline font-normal text-[0.88rem] tracking-[0.63em];
 }
 
 .subtitle {
@@ -70,22 +70,22 @@ p {
 
 /* Button Variants */
 .primary-btn {
-  @apply px-[1.91em] py-[0.94em] text-[0.81rem] uppercase font-bold bg-[var(--primary)] text-white hover:bg-[var(--muted-primary)] transition-colors;
+  @apply px-[1.91em] py-[0.94em] text-[0.81rem] uppercase font-bold bg-[var(--primary)] text-white hover:bg-[var(--muted-primary)] transition-colors cursor-pointer;
 }
 
 .black-btn {
-  @apply px-[1.91em] py-[0.94em] text-[0.81rem] uppercase font-bold bg-white text-black hover:bg-black hover:text-white border-[0.13rem] border-black transition-colors;
+  @apply px-[1.91em] py-[0.94em] text-[0.81rem] uppercase font-bold bg-transparent text-black hover:bg-black hover:text-white border-[0.13rem] border-black transition-colors cursor-pointer;
 }
 
 .shop-btn {
-  @apply text-[0.81rem] uppercase font-bold bg-[var(--primary)] text-white hover:bg-[var(--muted-primary)] transition-colors;
+  @apply flex justify-center items-center gap-[0.83rem] text-[0.81rem] uppercase font-bold text-[var(--primary)] hover:text-[var(--muted-primary)] transition-colors cursor-pointer;
 }
 
-.error{
+.error {
   @apply font-medium text-[0.75rem] leading-[1.56] tracking-[-0.21px] text-[var(--danger)];
 }
 
-.label{
+.label {
   @apply text-black font-bold text-[0.75rem] leading-[1.56] tracking-[-0.21px];
 }
 
@@ -94,13 +94,89 @@ p {
   @apply px-[1.5em] md:px-[2.44em] lg:px-[10.31em];
 }
 
+/* Navbar Classes */
+.navbar-container {
+  @apply fixed top-0 left-0 z-50 w-full bg-[#121212] border-b-[0.13rem] border-[#979797] px-[1.5em] py-[2em] md:px-[2.47em] lg:px-[10.33em] lg:py-[2.19em];
+}
+
+.navbar-inner {
+  @apply flex items-center justify-between;
+}
+
+.navbar-links {
+  @apply absolute top-0 left-0 mt-[8rem] w-full flex-col items-center justify-center gap-[5rem] md:mt-[12rem] lg:static lg:mt-0 lg:flex lg:w-auto lg:flex-row lg:gap-[2.13rem];
+}
+
+.navbar-link {
+  @apply font-bold leading-[var(--line-height1)] tracking-[var(--letter-spacing2)] text-[var(--white)] uppercase hover:text-[var(--primary)] transition-colors text-[1.5rem] md:text-[2rem] lg:text-[0.81rem];
+}
+
+.nav-icon {
+  @apply cursor-pointer transition-opacity hover:opacity-75;
+}
+
+/* Hero Classes */
+.hero-container {
+  @apply px-[1.47em] py-[8em] md:px-[12.16em] lg:px-[10.31em] mt-[5.5rem] md:py-[13rem] lg:py-[8rem] flex justify-between items-center bg-[#121212] gap-0 lg:gap-[4rem];
+}
+
+.hero-content {
+  @apply text-center lg:text-left relative z-[3] lg:static lg:z-0;
+}
+
+.hero-title {
+  @apply max-w-full lg:max-w-[27rem] my-[1.5rem] text-white text-[2.25rem] md:text-[3rem] lg:text-[3.31rem] uppercase;
+}
+
+.hero-text {
+  @apply max-w-[21.81rem] mx-auto lg:mx-0 mb-[2.5rem] text-[var(--muted-low-white)];
+}
+
+.hero-image-wrapper {
+  @apply absolute z-0 lg:relative w-full h-full lg:w-[60rem] lg:h-[30rem] bottom-0 right-0 lg:right-[-2rem];
+}
+
+/* Products Showcase Classes */
+.showcase-categories {
+  @apply flex flex-col md:flex-row justify-between items-center gap-[4rem] md:gap-[0.63rem] lg:gap-[1.88rem] mx-auto mt-[18.5rem] md:mt-[20rem] lg:mt-[9rem] mb-[10.5rem];
+}
+
+.category-card {
+  @apply pb-[1.88em] bg-[#f1f1f1] rounded-[0.5rem] w-full;
+}
+
+/* Product Showcase - ZX9 Speaker */
+.zx9-container {
+  @apply relative isolate overflow-hidden pb-[3.44em] lg:pb-0 pt-[3.44em] md:pb-[3.25em] px-[1.47em] md:px-[10.63em] lg:pt-[6em] lg:pl-[7.34em] lg:pr-[5.94em] flex flex-col lg:flex-row justify-center lg:justify-between items-start gap-[2rem] md:gap-[4rem] lg:gap-[8.64rem] rounded-[0.5rem] bg-[var(--primary)];
+}
+
+.zx9-image-wrapper {
+  @apply relative h-[12.94rem] md:h-[14.81rem] lg:h-[30.81rem] w-[10.75rem] md:w-[12.31rem] lg:w-[38.63rem] mx-auto;
+}
+
+.zx9-rings-wrapper {
+  @apply rotate-[160deg] lg:rotate-0 absolute w-[30rem] md:w-[50rem] bottom-[7rem] right-[-3rem] lg:right-[17rem] lg:bottom-[0rem] z-[-1] pointer-events-none h-full;
+}
+
+.zx9-content {
+  @apply text-center lg:text-left;
+}
+
+.zx9-title {
+  @apply mb-[2rem] text-[3.5rem] text-white;
+}
+
+.zx9-text {
+  @apply my-[1.5rem] font-normal lg:mb-[2.5rem] lg:mt-[1.5rem] max-w-[21.81rem] text-white;
+}
+
 /* Footer Classes */
 .footer-container {
   @apply px-[1.5em] md:px-[2.44em] lg:px-[10.31em] pt-[3.25em] md:pt-[3.75em] lg:pt-[4.69em] pb-[2.81em] bg-[var(--black)];
 }
 
 .footer-navlink {
-  @apply font-bold text-[0.81rem] leading-[var(--line-height1)] tracking-[var(--letter-spacing2)] text-[var(--white)] uppercase hover:text-[var(--primary)] transition-colors;
+  @apply font-bold leading-[var(--line-height1)] tracking-[var(--letter-spacing2)] text-[var(--white)] uppercase hover:text-[var(--primary)] transition-colors;
 }
 
 .footer-text {
@@ -123,6 +199,3 @@ p {
 .subfooter-title {
   @apply uppercase mb-[2rem] text-[1.75rem] md:text-[2.5rem];
 }
-
-
-
