@@ -9,23 +9,23 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className={`navbar-container ${menuOpen ? "h-full lg:h-0" : "h-auto"}`}>
+    <header className={`navbar-container ${menuOpen ? "h-screen lg:h-auto" : "h-auto"}`}>
       <div className="navbar-inner">
 
         {/* Menu */}
-        <div className="flex items-center lg:hidden">
+        <div className="relative z-20 flex items-center lg:hidden">
           <Image
             src="/icons/menu.svg"
             alt="menu"
             width={16}
             height={15}
-            className="nav-icon"
+            className="nav-icon cursor-pointer"
             onClick={() => setMenuOpen((prev) => !prev)}
           />
         </div>
 
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" className="relative z-20">
           <Image
             src="/audiophile.svg"
             alt="Audiophile"
@@ -35,7 +35,7 @@ const Navbar = () => {
         </Link>
 
         {/* Navigation */}
-        <ul className={`navbar-links ${menuOpen ? "flex" : "hidden"}`}>
+        <ul className={`navbar-links ${menuOpen ? "flex" : "hidden lg:flex"}`}>
           {navlinks.map((link) => (
             <li key={link.name}>
               <Link
@@ -50,7 +50,7 @@ const Navbar = () => {
         </ul>
 
         {/* Cart */}
-        <Link href="/cart">
+        <Link href="/cart" className="relative z-20">
           <Image
             src="/icons/cart.svg"
             alt="cart"
