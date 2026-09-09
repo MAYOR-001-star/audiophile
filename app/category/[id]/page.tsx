@@ -26,7 +26,7 @@ const CategoryDetailPage = async ({ params }: CategoryDetailPageProps) => {
                 {categoryData.products.map((product) => (
                     <div
                         key={product.id}
-                        className={`category-product-item ${product.imageSide === "right" ? "flex-row-reverse" : ""}`}
+                        className={`category-product-item ${product.imageSide === "right" ? "category-product-reverse" : ""}`}
                     >
                         {/* Product Image */}
                         <div className="category-product-image-wrapper">

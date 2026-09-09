@@ -219,6 +219,10 @@ p {
   @apply mt-[7.5rem] lg:mt-[10rem] flex flex-col lg:flex-row items-center justify-between gap-[7.81rem];
 }
 
+.category-product-reverse {
+  @apply lg:flex-row-reverse;
+}
+
 .category-product-image-wrapper {
   @apply relative w-[20.44rem] md:w-[43.06rem] lg:w-[33.75rem] h-[22rem] lg:h-[35rem];
 }
