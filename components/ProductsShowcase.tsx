@@ -1,30 +1,13 @@
-import { miniProducts } from '@/mockupData/data'
 import React from 'react'
 import CustomButton from './CustomButton'
 import Image from 'next/image'
+import CategoryCards from './CategoryCards'
 
 
 const ProductsShowcase = () => {
     return (
         <div className='px-[1.5em] md:px-[2.47em] lg:px-[7.31em]'>
-            <div className='showcase-categories'>
-                {miniProducts.map((item) => {
-                    return (
-                        <div key={item.name} className='category-card'>
-                            <div className={`relative ${item.name==="Earphones"? "w-[10.81rem]" : "w-[7.69rem]"} h-[10rem] mx-auto bottom-[2.25rem]`}>
-                                <Image src={item.image} alt={item.name} fill className='object-cover rounded-[0.50em]' />
-                            </div>
-                            {/* <div className='relative'> */}
-                                <Image src="/shadow.svg" alt="shadow" height={18} width={122} className='mx-auto mt-[-4rem]'/>
-                            {/* </div> */}
-                            <div className='text-center'>
-                                <h6 className='mb-[0.94rem] uppercase'>{item.name}</h6>
-                                <CustomButton text="shop" buttonType="shop" variant="shop-btn" />
-                            </div>
-                        </div>
-                    )
-                })}
-            </div>
+            <CategoryCards />
             <div>
                 <div className='zx9-container'>
                     <div className='zx9-image-wrapper'>
@@ -32,7 +15,7 @@ const ProductsShowcase = () => {
                             src="/speakers/ZX9 speaker.svg"
                             alt="product"
                             fill
-                            className='object-cover'
+                            className='object-cover lg:object-contain'
                         />
                     </div>
                     <div className='zx9-rings-wrapper'>
@@ -40,7 +23,7 @@ const ProductsShowcase = () => {
                             src="/ring-lights.svg"
                             alt="product"
                             fill
-                            className='object-cover'
+                            className='object-cover lg:object-contain'
                         />
                     </div>
                     <div className='zx9-content'>
@@ -59,7 +42,7 @@ const ProductsShowcase = () => {
                             src="/speakers/ZX7 speaker.svg"
                             alt="product"
                             fill
-                            className='object-cover rounded-[0.50em]'
+                            className='object-cover lg:object-contain rounded-[0.50em]'
                         />
                     </div>
                 </div>
@@ -69,7 +52,7 @@ const ProductsShowcase = () => {
                             src="/earphones/YX1 earphones.svg"
                             alt="product"
                             fill
-                            className='object-cover rounded-[0.50em]'
+                            className='object-cover lg:object-contain rounded-[0.50em]'
                         />
                     </div>
                     <div className='pl-[1.5em] md:pl-[2.5em] lg::pl-[5.94em] py-[2.56em] md:py-[6.31em] bg-[#f1f1f1] rounded-[0.5rem] w-full md:w-[50%]'>

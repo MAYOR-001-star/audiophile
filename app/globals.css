@@ -56,8 +56,10 @@ h6 {
   @apply font-bold text-[1.13rem] leading-[1.3] tracking-[var(--letter-spacing2)];
 }
 
-.overline {
-  @apply no-underline font-normal text-[0.88rem] tracking-[0.63em];
+.overline,
+.overline-text {
+  @apply font-normal text-[0.88rem] tracking-[0.63em] uppercase;
+  text-decoration: none !important;
 }
 
 .subtitle {
@@ -117,7 +119,7 @@ p {
 
 /* Hero Classes */
 .hero-container {
-  @apply px-[1.47em] py-[8em] md:px-[12.16em] lg:px-[10.31em] mt-[5.5rem] md:py-[13rem] lg:py-[8rem] flex justify-between items-center bg-[#121212] gap-0 lg:gap-[4rem];
+  @apply px-[1.47em] py-[8em] md:px-[12.16em] lg:px-[10.31em] mt-[5.5rem] mb-[15rem] md:py-[13rem] lg:py-[8rem] flex justify-between items-center bg-[#121212] gap-0 lg:gap-[4rem];
 }
 
 .hero-content {
@@ -138,7 +140,7 @@ p {
 
 /* Products Showcase Classes */
 .showcase-categories {
-  @apply flex flex-col md:flex-row justify-between items-center gap-[4rem] md:gap-[0.63rem] lg:gap-[1.88rem] mx-auto mt-[18.5rem] md:mt-[20rem] lg:mt-[9rem] mb-[10.5rem];
+  @apply flex flex-col md:flex-row justify-between items-center gap-[4rem] md:gap-[0.63rem] lg:gap-[1.88rem] mx-auto my-[7.5rem] lg:my-[10rem];
 }
 
 .category-card {
@@ -198,4 +200,50 @@ p {
 
 .subfooter-title {
   @apply uppercase mb-[2rem] text-[1.75rem] md:text-[2.5rem];
+}
+
+/* Category Page Classes */
+.category-header {
+  @apply py-[6.09em] mt-[5.5rem] flex justify-between items-center bg-[#121212];
+}
+
+.category-header-title {
+  @apply text-center lg:text-left text-[var(--white)] uppercase mx-auto;
+}
+
+.category-products-section {
+  @apply px-[1.5rem] md:px-[2.47rem] lg:px-[10.31em];
+}
+
+.category-product-item {
+  @apply mt-[7.5rem] lg:mt-[10rem] flex flex-col lg:flex-row items-center justify-between gap-[7.81rem];
+}
+
+.category-product-image-wrapper {
+  @apply relative w-[20.44rem] md:w-[43.06rem] lg:w-[33.75rem] h-[22rem] lg:h-[35rem];
+}
+
+.category-product-image {
+  @apply object-cover lg:object-contain;
+}
+
+.category-product-content {
+  @apply max-w-[20.44rem] md:max-w-[35.75rem] lg:max-w-[27.81rem] text-center lg:text-left;
+}
+
+.category-product-badge {
+  @apply font-normal text-[0.88rem] tracking-[0.63em] uppercase mb-[1rem] text-[var(--primary)];
+  text-decoration: none !important;
+}
+
+.category-product-name {
+  @apply mb-[2rem] text-[2.5rem];
+}
+
+.category-product-description {
+  @apply mb-[2.5rem] text-[var(--muted-low-white)];
+}
+
+.category-cards-wrapper {
+  @apply px-[1.5rem] md:px-[2.47rem] lg:px-[10.31em];
 }

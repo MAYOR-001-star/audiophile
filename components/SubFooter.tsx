@@ -5,7 +5,7 @@ const SubFooter = () => {
   return (
     <section className='subfooter-container'>
       <div className='subfooter-image-wrapper'>
-        <Image src='/model.svg' alt='model' fill className='object-cover rounded-[0.50em]' />
+        <Image src='/model.svg' alt='model' fill className='object-cover lg:object-contain rounded-[0.50em]' />
       </div>
       <div className='subfooter-content'>
         <h2 className='subfooter-title'>
