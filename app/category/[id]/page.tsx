@@ -2,6 +2,7 @@ import CategoryCards from '@/components/CategoryCards'
 import CustomButton from '@/components/CustomButton'
 import { categoriesData } from '@/mockupData/data'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 interface CategoryDetailPageProps {
@@ -51,11 +52,12 @@ const CategoryDetailPage = async ({ params }: CategoryDetailPageProps) => {
                             <p className="category-product-description">
                                 {product.description}
                             </p>
-
-                            <CustomButton
-                                text={product.cta.label}
-                                variant="primary-btn"
-                            />
+                            <Link href={product.cta.href}>
+                                <CustomButton
+                                    text={product.cta.label}
+                                    variant="primary-btn"
+                                />
+                            </Link>
                         </div>
                     </div>
                 ))}

@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-  @apply font-bold text-[2rem] leading-[1.2] tracking-[var(--letter-spacing2)];
+  @apply font-bold text-[1.5rem] md:text-[2rem] leading-[1.2] tracking-[var(--letter-spacing2)];
 }
 
 h4 {
@@ -224,7 +224,7 @@ p {
 }
 
 .category-product-image-wrapper {
-  @apply relative w-[20.44rem] md:w-[43.06rem] lg:w-[33.75rem] h-[22rem] lg:h-[35rem];
+  @apply relative w-[20.44rem] md:w-[43.06rem] lg:w-[33.75rem] h-[35rem] lg:h-[35rem];
 }
 
 .category-product-image {
