@@ -187,7 +187,8 @@ p {
 
 /* SubFooter Classes */
 .subfooter-container {
-  @apply px-[1.5em] md:px-[2.44em] lg:px-[10.31em] flex flex-col lg:flex-row-reverse justify-center items-center gap-[2.5rem] md:gap-[3.94rem] lg:gap-[7.81rem] my-[7.5rem] lg:my-[12.5rem];
+  /* @apply px-[1.5em] md:px-[2.44em] lg:px-[10.31em] flex flex-col lg:flex-row-reverse justify-center items-center gap-[2.5rem] md:gap-[3.94rem] lg:gap-[7.81rem] my-[7.5rem] lg:my-[12.5rem]; */
+  @apply px-[1.5em] md:px-[2.44em] lg:px-[10.31em] flex flex-col lg:flex-row-reverse justify-center items-center gap-[2.5rem] md:gap-[3.94rem] lg:gap-[7.81rem];
 }
 
 .subfooter-image-wrapper {
@@ -250,4 +251,158 @@ p {
 
 .category-cards-wrapper {
   @apply px-[1.5rem] md:px-[2.47rem] lg:px-[10.31em];
+}
+
+/* Product Detail Page Classes */
+.product-detail-section {
+  @apply mt-[12rem] px-[1.5em] md:px-[2.41em] lg:px-[10.31em];
+}
+
+.product-back-link {
+  @apply mt-[4rem] inline-block;
+}
+
+.product-back-link-text {
+  @apply text-[var(--muted-low-white)] hover:text-[var(--primary)] transition-colors;
+}
+
+.product-hero {
+  @apply flex flex-col md:flex-row items-center justify-between gap-[2.5rem] md:gap-[4.31rem] lg:gap-[7.78rem] mt-[3.5rem];
+}
+
+.product-hero-image-wrapper {
+  @apply size-[20.44rem] md:w-[17.56rem] lg:w-[33.75rem] md:h-[30rem] lg:h-[35rem] relative;
+}
+
+.product-hero-image {
+  @apply object-cover lg:object-contain;
+}
+
+.product-hero-content {
+  @apply md:max-w-[21.22rem] lg:max-w-[27.88rem];
+}
+
+.product-badge {
+  @apply font-normal text-[0.88rem] tracking-[0.63em] uppercase text-[var(--primary)];
+  text-decoration: none !important;
+}
+
+.product-title {
+  @apply mt-[1rem] text-[2.5rem];
+}
+
+.product-description {
+  @apply my-[2rem] text-[var(--muted-low-white)];
+}
+
+.product-price {
+  @apply font-bold;
+}
+
+.product-actions {
+  @apply mt-[2.94rem] flex justify-start items-center gap-[1rem];
+}
+
+.product-quantity-selector {
+  @apply bg-[var(--muted-high-white)] px-[0.97em] py-[0.94em] flex justify-center items-center gap-[1.28rem];
+}
+
+.product-quantity-btn {
+  @apply font-bold text-[0.81rem] leading-[var(--line-height1)] tracking-[var(--letter-spacing2)] text-[var(--muted-low-white)] hover:text-[var(--primary)] cursor-pointer;
+}
+
+.product-quantity-value {
+  @apply font-bold;
+}
+
+.product-info-section {
+  @apply mt-[10rem] flex flex-col lg:flex-row justify-between items-start gap-[5.5rem] md:gap-[7.5rem] lg:gap-0;
+}
+
+.product-features {
+  @apply max-w-[39.69rem];
+}
+
+.product-features-title {
+  @apply uppercase;
+}
+
+.product-feature-text {
+  @apply text-[var(--muted-low-white)] mt-[2rem];
+}
+
+.product-in-box {
+  @apply flex flex-col md:flex-row lg:flex-col justify-between items-start w-auto md:w-full lg:w-auto;
+}
+
+.product-in-box-title {
+  @apply uppercase;
+}
+
+.product-in-box-list {
+  @apply mt-[1.5rem] md:mt-0 lg:mt-[2rem];
+}
+
+.product-in-box-item {
+  @apply mt-[0.5rem] flex justify-start items-center gap-[1.5rem];
+}
+
+.product-in-box-qty {
+  @apply text-[var(--primary)] font-bold;
+}
+
+.product-in-box-name {
+  @apply text-[var(--muted-low-white)] font-medium;
+}
+
+.product-gallery {
+  @apply flex flex-col md:flex-row justify-center items-stretch gap-[2rem] mt-[10rem];
+}
+
+.product-gallery-column {
+  @apply flex flex-col justify-center items-center gap-[1.88rem];
+}
+
+.product-gallery-small-wrapper {
+  @apply relative w-[20.44rem] md:w-[17.33rem] lg:w-[27.81rem] h-[10.88rem] lg:h-[17.5rem];
+}
+
+.product-gallery-small-image {
+  @apply object-cover lg:object-contain;
+}
+
+.product-gallery-large-wrapper {
+  @apply relative w-[20.44rem] md:w-[24.69rem] lg:w-[39.69rem] h-[23rem] lg:h-[37rem];
+}
+
+.product-gallery-large-image {
+  @apply object-cover;
+}
+
+.product-related-section {
+  @apply my-[10rem];
+}
+
+.product-related-title {
+  @apply uppercase mb-[4rem] text-center;
+}
+
+.product-related-grid {
+  @apply flex flex-col md:flex-row justify-center items-center gap-[3.5rem] md:gap-[0.69rem] lg:gap-0;
+}
+
+.product-related-image-wrapper {
+  @apply w-[20.44rem] md:w-[13.94rem] lg:w-[28.88rem] h-[17.5rem] md:h-[19.88rem] lg:h-[19.88rem] relative;
+}
+
+.product-related-image {
+  @apply object-cover lg:object-contain;
+}
+
+.product-related-content {
+  @apply flex flex-col items-center;
+}
+
+.product-related-name {
+  @apply mt-[2.5rem] mb-[2rem];
 }

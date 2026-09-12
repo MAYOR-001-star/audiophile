@@ -146,9 +146,9 @@ export const productsData: ProductDetailsProps[] = [
         images: {
             main: "/category/headphones/xx99-mark-ii.svg",
             gallery: [
-                "/products/headphones/xx99-mark-ii/desktop/image-gallery-1.svg",
-                "/products/headphones/xx99-mark-ii/desktop/image-gallery-2.svg",
-                "/products/headphones/xx99-mark-ii/desktop/image-gallery-3.svg",
+                "/extras/headphones/headphone-1/headphone-gallery-1.svg",
+                "/extras/headphones/headphone-1/headphone-gallery-2.svg",
+                "/extras/headphones/headphone-1/headphone-gallery-3.svg",
             ],
         },
         features: [
@@ -210,9 +210,9 @@ export const productsData: ProductDetailsProps[] = [
         images: {
             main: "/category/headphones/xx99-mark-i.svg",
             gallery: [
-                "/products/headphones/xx99-mark-i/desktop/image-gallery-1.svg",
-                "/products/headphones/xx99-mark-i/desktop/image-gallery-2.svg",
-                "/products/headphones/xx99-mark-i/desktop/image-gallery-3.svg",
+                "/extras/headphones/headphone-2/headphone-gallery-1.svg",
+                "/extras/headphones/headphone-2/headphone-gallery-2.svg",
+                "/extras/headphones/headphone-2/headphone-gallery-3.svg",
             ],
         },
         features: [
@@ -241,19 +241,19 @@ export const productsData: ProductDetailsProps[] = [
             {
                 id: "xx99-mark-ii",
                 name: "XX99 MARK II",
-                image: "/category/headphones/xx99-mark-ii.svg", 
+                image: "/category/headphones/xx99-mark-ii.svg",
                 href: "/product/xx99-mark-ii",
             },
             {
                 id: "xx59",
                 name: "XX59",
-                image: "/category/headphones/xx59.svg", 
+                image: "/category/headphones/xx59.svg",
                 href: "/product/xx59",
             },
             {
                 id: "zx9",
                 name: "ZX9 SPEAKER",
-                image: "/category/speakers/zx9.svg", 
+                image: "/category/speakers/zx9.svg",
                 href: "/product/zx9",
             },
         ],
@@ -270,9 +270,9 @@ export const productsData: ProductDetailsProps[] = [
         images: {
             main: "/category/headphones/xx59.svg",
             gallery: [
-                "/products/headphones/xx59/desktop/image-gallery-1.svg",
-                "/products/headphones/xx59/desktop/image-gallery-2.svg",
-                "/products/headphones/xx59/desktop/image-gallery-3.svg",
+                "/extras/headphones/headphone-3/headphone-gallery-1.svg",
+                "/extras/headphones/headphone-3/headphone-gallery-2.svg",
+                "/extras/headphones/headphone-3/headphone-gallery-3.svg",
             ],
         },
         features: [
@@ -301,19 +301,19 @@ export const productsData: ProductDetailsProps[] = [
             {
                 id: "xx99-mark-ii",
                 name: "XX99 MARK II",
-                image: "/category/headphones/xx99-mark-ii.svg", 
+                image: "/category/headphones/xx99-mark-ii.svg",
                 href: "/product/xx99-mark-ii",
             },
             {
                 id: "xx99-mark-i",
                 name: "XX99 MARK I",
-                image: "/category/headphones/xx99-mark-i.svg", 
+                image: "/category/headphones/xx99-mark-i.svg",
                 href: "/product/xx99-mark-i",
             },
             {
                 id: "zx9",
                 name: "ZX9 SPEAKER",
-                image: "/category/speakers/zx9.svg", 
+                image: "/category/speakers/zx9.svg",
                 href: "/product/zx9",
             },
         ],
@@ -330,9 +330,9 @@ export const productsData: ProductDetailsProps[] = [
         images: {
             main: "/category/speakers/zx9.svg",
             gallery: [
-                "/products/speakers/zx9/desktop/image-gallery-1.svg",
-                "/products/speakers/zx9/desktop/image-gallery-2.svg",
-                "/products/speakers/zx9/desktop/image-gallery-3.svg",
+                "/extras/speakers/speaker-1/speaker-gallery-1.svg",
+                "/extras/speakers/speaker-1/speaker-gallery-2.svg",
+                "/extras/speakers/speaker-1/speaker-gallery-3.svg",
             ],
         },
         features: [
@@ -365,19 +365,19 @@ export const productsData: ProductDetailsProps[] = [
             {
                 id: "zx7",
                 name: "ZX7 SPEAKER",
-                image: "/category/speakers/zx7.svg", 
+                image: "/category/speakers/zx7.svg",
                 href: "/product/zx7",
             },
             {
                 id: "xx99-mark-i",
                 name: "XX99 MARK I",
-                image: "/category/headphones/xx99-mark-i.svg", 
+                image: "/category/headphones/xx99-mark-i.svg",
                 href: "/product/xx99-mark-i",
             },
             {
                 id: "xx59",
                 name: "XX59",
-                image: "/category/headphones/xx59.svg", 
+                image: "/category/headphones/xx59.svg",
                 href: "/product/xx59",
             },
         ],
@@ -394,9 +394,9 @@ export const productsData: ProductDetailsProps[] = [
         images: {
             main: "/category/speakers/zx7.svg",
             gallery: [
-                "/products/speakers/zx7/desktop/image-gallery-1.svg",
-                "/products/speakers/zx7/desktop/image-gallery-2.svg",
-                "/products/speakers/zx7/desktop/image-gallery-3.svg",
+                "/extras/speakers/speaker-2/speaker-gallery-1.svg",
+                "/extras/speakers/speaker-2/speaker-gallery-2.svg",
+                "/extras/speakers/speaker-2/speaker-gallery-3.svg",
             ],
         },
         features: [
@@ -429,19 +429,19 @@ export const productsData: ProductDetailsProps[] = [
             {
                 id: "zx9",
                 name: "ZX9 SPEAKER",
-                image: "/category/speakers/zx9.svg", 
+                image: "/category/speakers/zx9.svg",
                 href: "/product/zx9",
             },
             {
                 id: "xx99-mark-i",
                 name: "XX99 MARK I",
-                image: "/category/headphones/xx99-mark-i.svg", 
+                image: "/category/headphones/xx99-mark-i.svg",
                 href: "/product/xx99-mark-i",
             },
             {
                 id: "xx59",
                 name: "XX59",
-                image: "/category/headphones/xx59.svg", 
+                image: "/category/headphones/xx59.svg",
                 href: "/product/xx59",
             },
         ],
@@ -458,9 +458,9 @@ export const productsData: ProductDetailsProps[] = [
         images: {
             main: "/category/earphones/yx1-wireless.svg",
             gallery: [
-                "/products/earphones/yx1-wireless/desktop/image-gallery-1.svg",
-                "/products/earphones/yx1-wireless/desktop/image-gallery-2.svg",
-                "/products/earphones/yx1-wireless/desktop/image-gallery-3.svg",
+                "/extras/earphones/earphone-gallery-1.svg",
+                "/extras/earphones/earphone-gallery-2.svg",
+                "/extras/earphones/earphone-gallery-3.svg",
             ],
         },
         features: [
@@ -493,19 +493,19 @@ export const productsData: ProductDetailsProps[] = [
             {
                 id: "xx99-mark-i",
                 name: "XX99 MARK I",
-                image: "/category/headphones/xx99-mark-i.svg", 
+                image: "/category/headphones/xx99-mark-i.svg",
                 href: "/product/xx99-mark-i",
             },
             {
                 id: "xx59",
                 name: "XX59",
-                image: "/category/headphones/xx59.svg", 
+                image: "/category/headphones/xx59.svg",
                 href: "/product/xx59",
             },
             {
                 id: "zx9",
                 name: "ZX9 SPEAKER",
-                image: "/category/speakers/zx9.svg", 
+                image: "/category/speakers/zx9.svg",
                 href: "/product/zx9",
             },
         ],

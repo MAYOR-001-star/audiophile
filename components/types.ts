@@ -14,3 +14,11 @@ export type CustomInputProps = {
     className?: string;
     error?: string;
 }
+
+export type QuantitySelectorProps = {
+    quantity?: number;
+    onQuantityChange?: (quantity: number) => void;
+    min?: number;
+    max?: number;
+    className?: string;
+}
