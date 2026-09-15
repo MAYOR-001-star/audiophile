@@ -511,3 +511,28 @@ export const productsData: ProductDetailsProps[] = [
         ],
     },
 ]
+
+
+export const cartItems = [
+    {
+        id: "xx99-mark-ii",
+        name: "XX99 MARK II",
+        price: 2999,
+        quantity: 1,
+        image: "/category/headphones/xx99-mark-ii.svg",
+    },
+    {
+        id: "xx59",
+        name: "XX59",
+        price: 899,
+        quantity: 2,
+        image: "/category/headphones/xx59.svg"
+    },
+    {
+        id: "yx1",
+        name: "YX1",
+        price: 599,
+        quantity: 1,
+        image: "/category/earphones/yx1-wireless.svg"
+    },
+];

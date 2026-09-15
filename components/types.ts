@@ -2,6 +2,7 @@ export type ButtonProps = {
     text: string,
     buttonType?: "shop",
     variant: "primary-btn" | "black-btn" | "shop-btn";
+    className?: string;
 }
 
 export type CustomInputProps = {
@@ -21,4 +22,4 @@ export type QuantitySelectorProps = {
     min?: number;
     max?: number;
     className?: string;
-}
+}

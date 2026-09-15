@@ -1,12 +1,26 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { navlinks } from "@/mockupData/data"
+import Cart from "@/app/cart/page"
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState<boolean>(false)
+  const [cartOpen, setCartOpen] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (menuOpen || cartOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
+
+    return () => {
+      document.body.style.overflow = "unset"
+    }
+  }, [menuOpen, cartOpen])
 
   return (
     <header className={`navbar-container ${menuOpen ? "h-screen lg:h-auto" : "h-auto"}`}>
@@ -20,7 +34,10 @@ const Navbar = () => {
             width={16}
             height={15}
             className="nav-icon cursor-pointer"
-            onClick={() => setMenuOpen((prev) => !prev)}
+            onClick={() => {
+              setMenuOpen((prev) => !prev)
+              setCartOpen(false)
+            }}
           />
         </div>
 
@@ -50,7 +67,13 @@ const Navbar = () => {
         </ul>
 
         {/* Cart */}
-        <Link href="/cart" className="relative z-20">
+        <div 
+          onClick={() => {
+            setCartOpen((prev) => !prev)
+            setMenuOpen(false)
+          }} 
+          className="relative z-20"
+        >
           <Image
             src="/icons/cart.svg"
             alt="cart"
@@ -58,8 +81,9 @@ const Navbar = () => {
             height={20}
             className="nav-icon"
           />
-        </Link>
+        </div>
       </div>
+      {cartOpen && <Cart cartOpen={cartOpen}  setCartOpen={setCartOpen} />}
     </header>
   )
 }
