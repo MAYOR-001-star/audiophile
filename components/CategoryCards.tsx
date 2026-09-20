@@ -15,7 +15,7 @@ const CategoryCards = () => {
                         <Image src="/shadow.svg" alt="shadow" height={18} width={122} className='mx-auto mt-[-4rem]' />
                         <div className='text-center'>
                             <h6 className='mb-[0.94rem] uppercase'>{item.name}</h6>
-                            <CustomButton text="shop" buttonType="shop" variant="shop-btn" />
+                            <CustomButton text="shop" buttonType="shop" variant="shop-btn" href={item.href} />
                         </div>
                     </div>
                 )

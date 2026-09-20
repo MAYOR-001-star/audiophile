@@ -18,17 +18,17 @@ export const miniProducts: miniProductsProps[] = [
     {
         "name": "Headphones",
         "image": "/miniproducts/headphones.svg",
-        "href": "/headphones"
+        "href": "/category/headphones"
     },
     {
         "name": "Speakers",
         "image": "/miniproducts/speakers.svg",
-        "href": "/speakers"
+        "href": "/category/speakers"
     },
     {
         "name": "Earphones",
         "image": "/miniproducts/earphones.svg",
-        "href": "/earphones"
+        "href": "/category/earphones"
     }
 ]
 

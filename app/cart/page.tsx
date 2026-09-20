@@ -4,6 +4,7 @@ import CustomButton from '@/components/CustomButton';
 import QuantitySelector from '@/components/QuantitySelector';
 import { cartItems } from '@/mockupData/data';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect } from 'react'
 
 const Cart = ({ cartOpen, setCartOpen }: { cartOpen?: boolean; setCartOpen?: React.Dispatch<React.SetStateAction<boolean>> }) => {
@@ -25,7 +26,7 @@ const Cart = ({ cartOpen, setCartOpen }: { cartOpen?: boolean; setCartOpen?: Rea
             />
 
             {/* Cart Modal */}
-            <div 
+            <div
                 onClick={(e) => e.stopPropagation()}
                 className="cart-modal"
             >
@@ -66,7 +67,9 @@ const Cart = ({ cartOpen, setCartOpen }: { cartOpen?: boolean; setCartOpen?: Rea
                     <h6 className="cart-total-value">$ 5,396</h6>
                 </div>
 
-                <CustomButton text="Checkout" variant="primary-btn" className="w-full" />
+                <Link href="/checkout">
+                    <CustomButton text="Checkout" variant="primary-btn" className="w-full" />
+                </Link>
             </div>
         </>
     )

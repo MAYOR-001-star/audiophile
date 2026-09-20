@@ -29,13 +29,13 @@ const ProductsShowcase = () => {
                     <div className='zx9-content'>
                         <h1 className='zx9-title'>ZX9 SPEAKER</h1>
                         <p className='zx9-text'>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                        <CustomButton text="See Product" variant="black-btn" />
+                        <CustomButton text="See Product" variant="black-btn" href="/product/zx9" />
                     </div>
                 </div>
                 <div className='relative flex flex-col md:flex-row justify-center gap-[1.88rem] md:gap-0 lg:gap-[1.88rem] items-center my-[1.5rem] md:my-[2rem] lg:my-[3rem]'>
                     <div className='absolute z-30 pl-[1.5em] md:pl-[3.88em] lg::pl-[5.94em] py-[6.31em] rounded-[0.5rem] w-full'>
-                        <h4 className='mb-[2rem] text-[1.0625rem] lg:text-[1.75rem]'>YX1 EARPHONES</h4>
-                        <CustomButton text="See Product" variant="black-btn" />
+                        <h4 className='mb-[2rem] text-[1.0625rem] lg:text-[1.75rem]'>ZX7 SPEAKER</h4>
+                        <CustomButton text="See Product" variant="black-btn" href="/product/zx7" />
                     </div>
                     <div className='relative w-full h-[20rem]'>
                         <Image
@@ -57,8 +57,7 @@ const ProductsShowcase = () => {
                     </div>
                     <div className='pl-[1.5em] md:pl-[2.5em] lg::pl-[5.94em] py-[2.56em] md:py-[6.31em] bg-[#f1f1f1] rounded-[0.5rem] w-full md:w-[50%]'>
                         <h4 className='mb-[2rem] text-[1.75rem]'>YX1 EARPHONES</h4>
-                        {/* <h4 className='mb-[2rem] text-[1.0625rem] lg:text-[1.75rem]'>YX1 EARPHONES</h4> */}
-                        <CustomButton text="See Product" variant="black-btn" />
+                        <CustomButton text="See Product" variant="black-btn" href="/product/yx1-wireless" />
                     </div>
                 </div>
             </div>

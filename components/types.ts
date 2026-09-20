@@ -3,6 +3,7 @@ export type ButtonProps = {
     buttonType?: "shop",
     variant: "primary-btn" | "black-btn" | "shop-btn";
     className?: string;
+    href?: string;
 }
 
 export type CustomInputProps = {
@@ -14,6 +15,9 @@ export type CustomInputProps = {
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     className?: string;
     error?: string;
+    required?: boolean;
+    checked?: boolean;
+    defaultChecked?: boolean;
 }
 
 export type QuantitySelectorProps = {
