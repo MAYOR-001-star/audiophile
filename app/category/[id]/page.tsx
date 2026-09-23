@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+import { notFound } from 'next/navigation'
+
 interface CategoryDetailPageProps {
     params: Promise<{ id: string }>
 }
@@ -16,7 +18,7 @@ const CategoryDetailPage = async ({ params }: CategoryDetailPageProps) => {
     );
 
     if (!categoryData) {
-        return <div>Category not found</div>;
+        notFound();
     }
     return (
         <div>

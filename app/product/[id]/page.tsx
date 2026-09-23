@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { notFound } from 'next/navigation'
 import { productsData } from '@/mockupData/data';
 import { ProductDetailsProps } from '@/mockupData/types';
 import Image from 'next/image';
@@ -19,7 +20,7 @@ const productPage = async ({ params }: ParamsProps) => {
   );
 
   if (!productData) {
-    return <div>Product not found</div>;
+    notFound();
   }
 
   return (

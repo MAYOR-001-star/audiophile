@@ -1,14 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-
-export type QuantitySelectorProps = {
-  quantity?: number
-  onQuantityChange?: (quantity: number) => void
-  min?: number
-  max?: number
-  className?: string
-}
+import { QuantitySelectorProps } from './types'
 
 const QuantitySelector = ({
   quantity,
